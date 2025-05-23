@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Larah e Miguel</title>
+    <style>
+            @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+        :root{
+            --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+            --fonte2: "Passion One", sans-serif;
+            --fonte3: "Sriracha", cursive;
+            --fonte4: 'Dancing Script', cursive;
+            --fonte5: "Playfair Display";
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        html, body{
+            min-height: 100vh;
+            background-color: darkgray;
+            font-family: var(--fonte1);
+        }
+
+        header{
+            background-color: #0b2047;
+            color: white;
+            text-align: center;
+        }
+
+        header > h1{
+            padding-top: 50px;
+            font-variant: small-caps;
+            font-family: var(--fonte2);
+            font-size: 6vw;
+            
+        }
+        @media (max-width: 600px){
+            header > h1{
+                font-size: 8vw;
+            }
+        }
+
+        header > p{
+            padding-bottom: 50px;
+        }
+
+       header a, footer a{
+            color: white;
+            text-decoration: none;
+            font-weight: bolder;
+        }
+
+       header a:hover, footer a:hover{
+            text-decoration: underline;
+        }
+
+        section{
+            padding-top: 10vh;
+            padding-bottom: 10vh;
+            line-height: 3em;
+            font-family: var(--fonte4);
+            font-size: 2vw;
+        }
+
+        section.image{
+            padding-left: 20px;
+        }
+
+        @media (max-width: 600px){
+            section{
+                font-size: 5vw;
+            }
+        }
+
+        .normal{
+            background: #FFE4E1;
+            color: black;
+        }
+
+        .image{
+            background-color: rgb(52, 45, 45);
+            color: white;
+            box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.496);
+            background-size: cover;
+            background-attachment: fixed;   
+        }
+
+        .image > p{
+            display: inline-block;
+            padding: 5px;
+            margin: 0;
+            width: 600px;
+            background-color: rgba(0, 0, 0, 0.408);
+            text-shadow: 1px 1px 0px black;
+        }
+
+         @media (max-width: 600px){
+            .image > p{
+                width: 350px;
+            }
+        }
+
+        #img-01{
+            background-image: url('img/igmsg.jpg');
+            background-position: top center;
+        }
+
+        #img-02{
+            background-image: url('img/flores.jpg');
+            background-position: right center;
+
+        }
+
+        #img-03{
+            background-image: url('img/spider.jpg');
+            background-position: top center;
+            
+
+        }
+
+        footer{
+            background-color: #0b2047;
+            text-align: center;
+            color: white;
+            padding: 10px;
+            
+        }
+
+        strong{
+            color: #FF69B4;
+        }
+
+        .normal-h1{
+            text-align: center;
+            font-size: 50px;
+        }
+
+        .main-section{
+            width: 100%;
+            padding-top: 30px;
+            height: 200px;
+            background-color: #FFE4E1;
+            text-align: center;
+        }
+
+        h2{
+            font-size: 40px;
+            padding-top: 2  0px;
+        }
+
+        #contador{
+            font-size: 70px;
+            font-family: var(--fonte3);
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        @media (max-width: 600px) {
+    .main-section {
+        height: auto;
+        padding: 20px 10px;
+    }
+
+    h2 {
+        font-size: 28px;
+        padding-top: 10px;
+    }
+
+    #contador {
+        font-size: 48px;
+        padding-top: 10px;
+    }
+}
+
+.larah-h1{
+    text-align: center;
+    color: red;
+}
+
+@media (max-width: 600px) {
+  .foto-principal {
+    width: 90%;
+    height: auto;
+  }
+}
+
+
+        .bar{
+            width: 100%;
+            height: 50px;
+            background: linear-gradient(to right, rgba(255, 0, 255, 0.537), rgba(128, 0, 128, 0.712), rgba(0, 0, 128, 0.707));
+        }
+
+        .photos{
+            background-color: #FFE4E1;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            
+        }
+
+        .galeria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 15px;
+  max-width: 900px;        
+  margin: auto;       
+  padding: 0 20px;         
+}
+
+.galeria img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .galeria {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
+
+@media (max-width: 480px) {
+  .galeria {
+    grid-template-columns: 1fr;
+  }
+}
+
+img:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+    </style>
+</head>
+<body>
+        <header>
+            <h1>Larah Foffano & Miguel Sobrinho</h1>
+            <p>A nossa história</p>
+        </header>
+
+        <section class="normal">
+            <p>
+                A história começa há muito tempo atrás...<br>
+                Quando Miguel ao ficar na saída da escola, conversando com seus amigos, viu uma menina de cabelo cacheado, <strong>EXTREMAMENTE</strong> bonita e cheirosa.<br>
+                Ele ficou tão encantado que não conseguiu tirar os olhos dela.<br>
+                Então, ele decidiu ir atrás dela e conquistar, porque algo dentro dele dizia que era ela, a pessoa certa, a pessoa que ele esperava e com quem sempre sonhou.
+            </p>
+        </section>
+
+        <section class="image" id="img-01">
+            <p>
+                Até que um dia Miguel criou para começar a conversar com Larah, então, dia 03 de junho de 2024, ele decidiu responder um story em que ela estava como sempre foi, perfeita. <br>
+                Ele nem acreditou que ela respondeu, e a conversa começou.
+            </p>
+        </section>
+
+        <section class="normal">
+            <p>
+                Miguel tinha algo dentro dele que dizia que ela era a pessoa certa, e ele estava certo. <br>
+                Larah, uma menina tão linda, cheirosa e perfeita, era impossível não se apaixonar por ela. <br>
+                Ele nunca tinha visto uma pessoa tão cheirosa, quando ele abraça ela, ele ficava o resto do dia sentindo aquele cheiro que não saía nunca. <br>
+                Perfume mais marcante que tudo, um cheiro do qual Miguel jamais se esquecerá. <br>
+            </p>
+            
+            <p>
+                Larah era a menina mais perfeita que Miguel já tinha visto, e ele sabia que ela era a pessoa certa para ele. <br>
+                Ele estava tão apaixonado por ela, e ele sabia que ela também estava apaixonada por ele. <br>
+                Eles eram feitos um para o outro, e ele sabia disso. <br>
+                Então, no dia 05 de julho de 2024, ele foi na casa da Larah, e ele já sabia que amava tanto ela, que não poderia apenas chegar lá, tinha que mostrar o quanto ele estava louco de amor pela Larah.
+                
+            </p>
+        </section>
+
+        <section class="image" id="img-02">
+            <p>
+                Miguel levou um buquê de flores para Larah, e ela ficou tão feliz que só ali eu já sabia que valeu a pena. <br>
+                Eles ali ficaram juntos mesmo pela primeira vez, iniciando um namoro que é algo magnífico e único até hoje e será para sempre.
+            </p>
+        </section>
+
+        <section class="normal"> 
+            <p>
+                E dali em diante Miguel e Larah só se apaixonaram cada vez mais. <br>
+                Se amaram, foram felizes e viveram momentos únicos. <br>
+                O desejo de ficar juntos era tão grande que eles não conseguiam ficar longe um do outro. <br>
+                Larah fez Miguel ser o homem mais feliz do mundo, fez ele ter sua vida colorida e sentido, ter um motivo de seguir em frente e seguir, esse motivo tinha nome e sobrenome, Larah Foffano.
+            </p>
+        </section>
+
+        <section class="image" id="img-03">
+            <p>
+                Miguel amou, amou e amou Larah, ele ama ela com todas as suas forças, e todo segundo ao seu lado é mais do que especial. <br>
+                Ele faz de tudo para poder ter as melhores condições o quanto antes para poder comprar a casa deles, o carros deles, e tudo o que eles sonham juntos. <br>
+                O maior sonho dele é poder realizar todos os sonhos da Larah e poder viver uma vida tranquila e feliz ao lado dela.
+            </p>
+            </section>
+        <main class="bar">
+
+        </main>
+
+        <main class="main-section">
+            <h2>Contagem Regressiva para o nosso 1 ano de namoro: </h2>
+            <p id="contador"></p>
+        <img src="" alt="">
+            
+        </main>
+
+        <main class="bar">
+            
+        </main>
+
+         <section class="normal"> 
+            <h1 class="normal-h1">PARA MEU AMOR</h1>
+            <p>
+                EU TE AMO DEMAIS MEU AMOR, VOCÊ É A MINHA VIDA, O MEU MUNDO E O MEU TUDO. <br>
+            SOU INFINITAMENTE GRATO A DEUS POR TER ME DADO A OPORTUNIDADE DE TE CONHECER E TE AMAR. <br>
+            VOCÊ É A MELHOR COISA QUE JÁ ACONTECEU NA MINHA VIDA, E EU NÃO CONSIGO IMAGINAR MINHA VIDA SEM VOCÊ. <br>
+            EU TE AMO MUITO, MUITO, MUITO, E SEMPRE VOU TE AMAR. 
+            </p> 
+            <img src="img/f10000000.jpg" class="foto-principal" alt="" width="700" height="900" style="border-radius: 10px; display: block; margin-left: auto; margin-right: auto; border: 2px solid #FF69B4;">
+            <h1 class="larah-h1">LINDA DO NAMORADO, EU AMO VOCÊ!</h1>
+        </section>
+
+        <main class="bar">
+            
+        </main>
+
+        <main class="photos">
+            <div class="galeria">
+                <img src="img/f1.jpg" alt="" width="300" height="400">
+                <img src="img/f2.jpg" alt="" width="300" height="400">
+                <img src="img/f5.jpg" alt="" width="300" height="400">
+                <img src="img/f6.jpg" alt="" width="300" height="400">
+                <img src="img/f7.jpg" alt="" width="300" height="400">
+                <img src="img/f11.jpg" alt="" width="300" height="400">
+                <img src="img/f9.jpg" alt="" width="300" height="400">
+                <img src="img/f10.jpg" alt="" width="300" height="400">
+                <img src="img/f8.jpg" alt="" width="300" height="400">
+                
+            </div>
+        </main>
+
+        <footer>
+            <p>Site criado por <a href="https://github.com/sobrinhoomiguel" target="_blank" rel="noopener">Miguel Sobrinho</a> para o meu grande amor, Larah Foffano.</p>
+        </footer>
+</body>
+</html>
+<script>
+    const dataEvento = new Date("2025-07-05T00:00:00").getTime();
+
+    const atualizaContador = () => {
+      const agora = new Date().getTime();
+      const distancia = dataEvento - agora;
+
+      if (distancia < 0) {
+        document.getElementById("contador").innerHTML = "Evento já aconteceu!";
+        return;
+      }
+
+      const dias = Math.floor(distancia / (1000 * 60 * 60 * 24));
+      const horas = Math.floor((distancia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutos = Math.floor((distancia % (1000 * 60 * 60)) / (1000 * 60));
+      const segundos = Math.floor((distancia % (1000 * 60)) / 1000);
+
+      document.getElementById("contador").innerHTML = 
+        `${dias}d ${horas}h ${minutos}m ${segundos}s`;
+    };
+
+    setInterval(atualizaContador, 1000);
+    atualizaContador();
+  </script>
